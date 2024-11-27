@@ -1,0 +1,353 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-left h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.header-right .logo {
+  width: 160px; 
+  height: auto;
+}
+
+.cif-section {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.cif-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.cif-boxes {
+  display: flex;
+  gap: 5px;
+
+}
+.cif-boxes input[type="text"]{
+    width: 30px;
+    margin-right: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+label {
+  font-weight: normal;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin: 0;
+  cursor: pointer;
+
+}
+.inline-group{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 1px;
+}
+.inline-group label{
+  font-weight: normal ;
+}
+/* Menambahkan kotak kosong untuk negara */
+.country-input {
+  width: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.nationality-group {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+}
+.country-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* tampilan tgl lahir */
+.form-row{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  margin:10px 0;
+}
+.form-row label{
+  min-width: 100px;
+  margin-bottom: 0;
+}
+.form-row input{
+  flex:1;
+}
+/* style tgl */
+.birth-group{
+  display: flex;
+  gap: 50px;
+  margin-top: 10px;
+}
+.birth-input{
+  width: 200px;
+  padding: 5px;
+  border: 1px solis #ccc;
+  border-radius: 4px;
+}
+.birth-date-input{
+  width: 120px;
+  padding: 5px;
+  border: 1px solid ;
+  border-radius: 4px;
+}
+.country-input-mt {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  gap: 20px;
+}
+  .country-group-mt {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+  }
+  .form-row{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin:10px 0;
+  }
+  .form-row label{
+    min-width: 100px;
+    margin-bottom: 0;
+  }
+  .form-row input{
+    flex:1;
+  }
+  /* style tgl */
+  .identitas-group{
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+  }
+  .identitas-input{
+    width: 200px;
+    padding: 5px;
+    border: 1px solis #ccc;
+    border-radius: 4px;
+  }
+  .id-input{
+    width: 200px;
+    padding: 5px;
+    border: 1px solis #ccc;
+    border-radius: 4px;
+  }
+.section-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ddd;
+  background-color: #133b66;
+  color: #ccc;
+}
+
+.data-section {
+  margin-bottom: 20px;
+  
+}
+.data-section-1{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-top: 1px;
+
+}
+
+/* pendidikan */
+.in-group{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-top: 1px;
+}
+/* agama*/
+.agama-group{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-top: 1px;
+}
+/* status perkawinan*/
+.st-group{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1px;
+}
+.kd-group{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1px;
+  
+}
+.kd-group{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1px;
+  
+}
+.domisili-group{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2px;
+}
+.form-ds label{
+  font-weight: bold;
+
+}
+/* rt/rw */
+.rt-group{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+  
+}
+.rt-group{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 10px;
+  
+}
+.kt-group{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+  
+}
+
+.dms-group{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1px;
+  
+}
+
+.hp-group{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1px;
+}
+/* kerja */
+.kerja-group{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1px;
+}
+.tempat-group{
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin-top: 1px;
+}
+.lama-group{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 3px;
+}
+.jabat-group{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+.alm-group{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+.surat-group{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+  font-weight: bold;  
+}
+.hasil-group{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+.tf-group{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+}

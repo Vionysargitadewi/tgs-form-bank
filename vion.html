@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Aplikasi Rekening</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-header">
+      <div class="header-left">
+        <h2>Formulir Aplikasi Rekening 
+            <br>Perorangan (AR-01)</h2>
+      </div>
+      <div class="header-right">
+        <img src="foto/ss1.jfif" alt="Bank BRI Logo" class="logo">
+      </div>
+    </div>
+    
+    <div class="form-content">
+     <!-- CIF Section -->
+   <div class="cif-section">
+        <label class="cif-label">CIF:</label>
+        <div class="cif-boxes">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+          <input type="text" maxlength="1">
+        </div>
+      </div>
+<!-- Instruction -->
+  <small class="instruction"> Mohon diisi oleh nasabah dengan huruf cetak pada kolom berwarna putih dan berikan tanda (v) sesuai pilihan</small>
+      
+<!-- Nama Lengkap -->
+<div class="data-section-1">
+   <label>Nama lengkap:</label>
+   <label>
+   <input type="text" class="st-input" placeholder="">
+</div>
+<div class="data-section">
+  <label>Nama lengkap:</label>
+  <label>
+  <input type="text" class="st-input" placeholder="" id="sesua id">
+</div>
+  <!-- Section: Data Pribadi -->
+   <div class="data-section">
+   <div class="section-title">1. DATA NASABAH <br> DATA PRIBADI</div>
+
+  <!-- jenis kelamin -->
+   <div class="inline-group">
+    <label>Jenis Kelamin:</label>
+    <label>
+      <input type="radio" name="jk" value="Pria">Pria
+    </label>
+    <label>
+      <input type="radio" name="jk" value="premuan">wanita
+    </label>
+   </div>
+  <!-- Kewarganegaraan dan Negara -->
+    <div class="inline-group">
+      <label>Kewarganegaraan:</label>
+      <label>
+        <input type="radio" name="nationality" value="WNI"> WNI
+      </label>
+      <label>
+        <input type="radio" name="nationality" value="WNA"> WNA
+      </label>
+      <label>Negara:</label>
+      <label>
+      <input type="text" class="country-input" placeholder="Masukkan Nama Negara">
+      </label>
+    </div>
+
+  <!-- Tempat Lahir dan Tanggal Lahir -->
+    <div class="birth-group">
+    <div class="form-row">
+     <label>Tempat Lahir:</label>
+      <input type="text" class="birth-input" placeholder="Masukkan Tempat Lahir">
+    </div>
+    <div class="form-row">
+      <label>Tanggal Lahir :</label>
+       <input type="date" class="birth-date-input" placeholder="dd-mm-yy">
+    </div>
+    </div>
+<!-- Nama Gadis Ibu Kandung -->
+<div class="country-group-mt">
+    <label>Nama gadis ibu kandung:</label>
+    <input type="text" class="country-input-mt" placeholder="Masukkan Nama ibu kandung">
+</div>
+  <!-- jenis identitas -->
+  <div class="inline-group">
+    <label>Jenis Identitas:     </label>
+    <label>
+      <input type="radio" name="ji" value="ktp">KTP
+    </label>
+    <label>
+      <input type="radio" name="ji" value="sim">SIM
+    </label>
+    <label>
+      <input type="radio" name="ji" value="pas">Passport
+    </label>
+   </div>
+<!-- no identitas -->
+<div class="identitas-group">
+  <div class="form-row">
+   <label>No identitas:</label>
+    <input type="text" class="identitas-input" placeholder="Masukkan No identitas">
+  </div>
+  <div class="form-row">
+    <label>Tanggal terbit :</label>
+     <input type="date" class="identitas-date-input" placeholder="dd-mm-yy">
+     <br>
+     <label>Tanggal kadaluarsa :</label>
+     <input type="date" class="id-date-input" placeholder="dd-mm-yy">
+  </div>
+  </div>
+<!-- pendidikan terakhir -->
+<div class="in-group">
+  <label>pendidikan terakhir:</label>
+  <label>
+    <input type="radio" name="pen" value="sd">SD
+  </label>
+  <label>
+    <input type="radio" name="pen" value="smp">SLTP
+  </label>
+  <label>
+    <input type="radio" name="pen" value="sma">SLTA
+  </label>
+  <label>
+    <input type="radio" name="pen" value="s1">S1
+  </label>
+  <label>
+    <input type="radio" name="pen" value="s2">S2
+  </label>
+  <label>
+    <input type="radio" name="pen" value="lain">lainnya
+  </label>
+ </div>
+
+ <!-- agama -->
+<div class="agama-group">
+  <label>Agama:</label>
+  <label>
+    <input type="radio" name="agm" value="islm">Ialam
+  </label>
+  <label>
+    <input type="radio" name="agm" value="ktlk">Katolik
+  </label>
+  <label>
+    <input type="radio" name="agm" value="prtstn">Protestan
+  </label>
+  <label>
+    <input type="radio" name="agm" value="bdha">Budha
+  </label>
+  <label>
+    <input type="radio" name="agm" value="hnd">Hindu
+  </label>
+  <label>
+    <input type="radio" name="agm" value="lain">lainnya
+  </label>
+
+ </div>
+
+  <!-- status perkawinan -->
+<div class="st-group">
+  <label>Status perkawinan:</label>
+  <label>
+    <input type="radio" name="sts" value="islm">Lajang
+  </label>
+  <label>
+    <input type="radio" name="sts" value="ktlk">Kawin
+  </label>
+  <label>
+    <input type="radio" name="sts" value="prtstn">Janda/Duda
+  </label>
+    <label>Hobi/Masalah:</label>
+      <label>
+      <input type="text" class="st-input" placeholder="Masukkan masalah">
+      </label>
+ </div>
+ <div class="kd-post">
+  <!-- KD Section -->
+<div class="kd-group">
+     <label class="kd-label">Kode Post Sesuai alamat:</label>
+     <div class="cif-boxes">
+       <input type="text" maxlength="1">
+       <input type="text" maxlength="1">
+       <input type="text" maxlength="1">
+       <input type="text" maxlength="1">
+       <input type="text" maxlength="1">
+       <input type="text" maxlength="1">
+     </div>
+     
+   </div>
+
+   <!-- domisili -->
+   <div class="domisili-group">
+      <div class="form-ds">
+       <label>Alamat Domisili(diisi hanya apabila berbeda dengan alamat di identitas):</label>
+      
+        <input type="text" class="domisili-input" placeholder="">
+        </div>
+      </div>
+  
+<!-- rt/rw -->
+<div class="rt-group">
+  <label class="rt-label">rt/rw:</label>
+  <div class="cif-boxes">
+    <input type="text" maxlength="1">
+    <input type="text" maxlength="1">
+    <input type="text" maxlength="1">
+    <input type="text" maxlength="1">
+    <input type="text" maxlength="1">
+    <input type="text" maxlength="1">
+  </div>
+  <label>Kel/Desa:</label>
+      <label>
+      <input type="text" class="st-input" placeholder="">
+      </label>
+</div>
+<div class="kt-group">
+  <label>Kecamatan:</label>
+  <label>
+  <input type="text" class="kt-input" placeholder="">
+  </label>
+  <label>Kota:</label>
+  <label>
+  <input type="text" class="kt-input" placeholder="">
+  </label>
+</div>
+
+<div class="dms-group">
+  <label>Domisili:</label>
+  <label>
+  <input type="text" class="dms-input" placeholder="">
+  </label>
+  <div class="rt-group">
+    <label class="rt-label">Kode Pos:</label>
+    <div class="cif-boxes">
+      <input type="text" maxlength="1">
+      <input type="text" maxlength="1">
+      <input type="text" maxlength="1">
+      <input type="text" maxlength="1">
+      <input type="text" maxlength="1">
+      <input type="text" maxlength="1">
+    </div>
+  </div>
+</div>
+
+<!-- jk iden -->
+<div class="jki-group">
+  <div class="form-row">
+   <label>Jenis Identitas:</label>
+  <div class="form-row">
+    <label>Telpon :</label>
+     <input type="text" class="identitas-date-input" placeholder="">
+     <label>Hanepone :</label>
+     <input type="text" class="id-date-input" placeholder="">
+  </div>
+  </div>
+  <div class="form-row">
+   <label>Jenis Identitas:</label>
+  <div class="form-row">
+    <label>facebook :</label>
+     <input type="text" class="identitas-date-input" placeholder="">
+     <label>Email :</label>
+     <input type="text" class="id-date-input" placeholder="">
+  </div>
+  </div>
+<!-- Section: Data Pekerjaan -->
+<div class="data-section">
+  <div class="section-title">2. DATA PEKERJAAN</div>
+
+ <!-- agama -->
+ <div class="kerja-group">
+  <label>Jenis Pekerjaan:</label>
+  <label>
+    <input type="radio" name="agm" value="islm">Pns
+  </label>
+  <label>
+    <input type="radio" name="agm" value="ktlk">TNI/POLRI
+  </label>
+  <label>
+    <input type="radio" name="agm" value="prtstn">Swasta
+  </label>
+  <label>
+    <input type="radio" name="agm" value="bdha">BUNM
+  </label>
+  <label>
+    <input type="radio" name="agm" value="hnd">Frofesional
+  </label>
+  <label>
+    <input type="radio" name="agm" value="lain">Wiraswasta
+  </label>
+  <label>
+    <input type="radio" name="agm" value="lain">Lainya
+  </label>
+ </div>
+
+ <div class="lama-group">
+  <label>Bidang Pekerjaan:</label>
+  <label>
+  <input type="text" class="lm-input" placeholder="">
+  </label>
+    <div class="lama-group">
+     <label class="rt-label">Lama Bekerja:</label>
+    </div>
+    <div class="cif-boxes">
+     <input type="text" maxlength="1">
+     <input type="text" maxlength="1">
+    </div>
+    <div class="rt-group">
+      <label class="rt-label">Tahun:</label>
+    </div>
+    <div class="cif-boxes">
+     <input type="text" maxlength="1">
+     <input type="text" maxlength="1">
+    </div>
+    <div class="lama-group">
+      <label class="rt-label">Bulan:</label>
+    <div class="cif-boxes">
+      <input type="text" maxlength="1">
+      <input type="text" maxlength="1">
+     </div>
+</div>
+    </div>
+
+<div class="jabat-group">
+  <label>Jabatan:</label>
+  <label>
+  <input type="text" class="jb-input" placeholder="">
+  </label>
+  <label class="rt-label">NPWP Nasabah:</label>
+    <div class="cif-boxes">
+     <input type="text" maxlength="1">
+     <input type="text" maxlength="1">
+     <input type="text" maxlength="1">
+     <input type="text" maxlength="1">
+     <input type="text" maxlength="1">
+     <input type="text" maxlength="1">
+     <input type="text" maxlength="1">
+     <input type="text" maxlength="1">
+     <input type="text" maxlength="1">
+     <input type="text" maxlength="1">
+    </div>
+</div>
+
+<div class="alm-group">
+  <label>Alamat Kantor/Tempat Bekerja:</label>
+  <label>
+  <input type="text" class="alm-input" placeholder="">
+  </label>
+</div>
+  <!-- rt/rw -->
+<div class="rt-group">
+  <label class="rt-label">rt/rw:</label>
+  <div class="cif-boxes">
+    <input type="text" maxlength="1">
+    <input type="text" maxlength="1">
+    <input type="text" maxlength="1">
+    <input type="text" maxlength="1">
+    <input type="text" maxlength="1">
+    <input type="text" maxlength="1">
+  </div>
+
+  <label>Kel/Desa:</label>
+      <label>
+      <input type="text" class="st-input" placeholder="">
+      </label>
+</div>
+
+<div class="form-row">
+  <label>Kecamatan :</label>
+   <input type="text" class="identitas-date-input" placeholder="">
+   <label>Kota :</label>
+   <input type="text" class="id-date-input" placeholder="">
+</div>
+<div class="form-row">
+  <label>Provinsi :</label>
+   <input type="text" class="identitas-date-input" placeholder="">
+   <label>Kode Pos:</label>
+   <input type="text" class="id-date-input" placeholder="">
+</div>
+<div class="form-row">
+  <label> Telpon :</label>
+   <input type="text" class="identitas-date-input" placeholder="">
+   <label>Telpon :</label>
+   <input type="text" class="id-date-input" placeholder="">
+</div>
+</div>
+<div class="surat-group">
+  <label>Alamat Surat Menyurat:     </label>
+  <label>
+    <input type="radio" name="ji" value="ktp">Sesuai ID
+  </label>
+  <label>
+    <input type="radio" name="ji" value="sim">Sesuai Domisili
+  </label>
+  <label>
+    <input type="radio" name="ji" value="pas">Kantor/Tempat Kerja
+  </label>
+ </div>
+
+ <!-- Section: Data keuangan -->
+<div class="data-section">
+  <div class="section-title"> DATA KEUANGAN</div>
+        <!-- Baris Pertama Checkbox -->
+        <div class="hasil-group">
+          <label>pengghasilan nasabah perbulan:</label>
+          <label>
+            <input type="radio" name="agm" value="islm">s/d 5JT
+          </label>
+          <label>
+            <input type="radio" name="agm" value="ktlk">5-10 JT
+          </label>
+          <label>
+            <input type="radio" name="agm" value="prtstn">10-20 JT
+          </label>
+          <label>
+            <input type="radio" name="agm" value="bdha">Diatas 100jt
+          </label>
+        </div>
+        <div class="tf-group">
+          <label>Transaksi maksimal Nasabah    :</label>
+          <label>
+            <input type="radio" name="agm" value="islm">s/d 5JT
+          </label>
+          <label>
+            <input type="radio" name="agm" value="ktlk">5-10 JT
+          </label>
+          <label>
+            <input type="radio" name="agm" value="prtstn">10-20 JT
+          </label>
+          <label>
+            <input type="radio" name="agm" value="bdha">Diatas 100jt
+          </label>
+        </div>
+        <div class="tf-group">
+          <label>Sumber dana    :</label>
+          <label>
+            <input type="radio" name="agm" value="islm">Gaji
+          </label>
+          <label>
+            <input type="radio" name="agm" value="ktlk">hasil usaha
+          </label>
+          <label>Lainya:</label>
+          <label>
+          <input type="text" class="st-input" placeholder="">
+          </label>
+        
+          
+        </div>
+      
+      
+</body>
+</html>
